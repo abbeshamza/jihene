@@ -1,0 +1,14 @@
+api/web/bundles/
+api/app/bootstrap.php.cache
+api/app/cache/*
+api/app/config/parameters.yml
+api/app/logs/*
+api/app/cache/*
+api/app/logs/*
+api/app/phpunit.xml
+api/build/*
+api/vendor/*
+api/bin/*
+api/composer.phar
+front/docs/*
+front/bower_components/*

@@ -1,0 +1,179 @@
+
+<md-content >
+    <h3>Language Experience and Proficiency Questionnaire</h3>
+    <h4>Part two -> Language: French</h4>
+    <div>
+        <form name="frenchForm" ng-model="frenchForm" novalidate enctype="multipart/form-data" ng-submit="partOne.frenchLanguage()" >
+            <div  layout="row"layout-align="start center">
+                <div >This is my  </div>
+                <div >  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.order"   ng-required="true">
+                        <md-option  ng-selected="true">first </md-option>
+                        <md-option>second </md-option>
+                        <md-option>third</md-option>
+                    </md-select>
+                    <div ng-messages="frenchForm.order.$error">
+                        <div ng-message="required">We need to know your instution name</div>
+                    </div>
+                </md-input-container >
+                </div>
+                <div>
+                    language.
+
+                </div>
+            </div>
+
+            <div><h3>All questions below refer to your knowledge of the French language.</h3></div>
+
+
+            <div  layout="row"layout-align="start center">
+                <div flex="50"> What was your age when you began acquiring the French language</div>
+                <div>  <md-input-container class="md-block" flex-gt-sm>
+                    <label>age</label>
+                    <input type="number" id="age" ng-model="french.age " name="age" ng-required="true">
+                    <div ng-messages="frenchForm.age.$error">
+                        <div ng-message="required">We need to know your age when you start learning French</div>
+                    </div>
+                </md-input-container >
+                </div>
+            </div>
+
+            <div  layout="row"layout-align="start center">
+                <div flex="50"> Do you use the French language when speaking with your family? </div>
+                <div flex="30">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.family">
+                        <md-option ng-selected="true">Always</md-option>
+                        <md-option> Sometimes</md-option>
+                        <md-option>Never</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+            <div  layout="row"layout-align="start center">
+                <div flex="50"> Do you use the French language when speaking with your friends ? </div>
+                <div flex="30">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.friends">
+                        <md-option ng-selected="true">Always</md-option>
+                        <md-option> Sometimes</md-option>
+                        <md-option>Never</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+            <div  layout="row"layout-align="start center">
+                <div flex="50"> Do you use the French language in your university?  </div>
+                <div flex="30">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.university">
+                        <md-option ng-selected="true">Always</md-option>
+                        <md-option> Sometimes</md-option>
+                        <md-option>Never</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+
+
+            <div  layout="row"layout-align="start center">
+                <div flex="50"> Do you watch French programs ?   </div>
+                <div flex="30">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.university">
+                        <md-option ng-selected="true">Always</md-option>
+                        <md-option> Sometimes</md-option>
+                        <md-option>Never</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+
+
+            <div  layout="row"layout-align="start center">
+                <div flex="50">Do you read books in French ?  </div>
+                <div flex="30">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.book">
+                        <md-option ng-selected="true">Always</md-option>
+                        <md-option> Sometimes</md-option>
+                        <md-option>Never</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+
+            <div  layout="row"layout-align="start center">
+                <div flex="50">Which factor you think have contributed the most in your learning the French language?
+                </div>
+                <div flex="30">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.factor">
+                        <md-option ng-selected="true">Courses at school</md-option>
+                        <md-option> interaction with friends</md-option>
+                        <md-option>interaction with family</md-option>
+                        <md-option>reading books</md-option>
+                        <md-option>watching tv</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+            <div><p>On a scale from zero to ten, please rate your level of proficiency in speaking, understanding, and reading French : </p></div>
+
+            <div  layout="row" flex-gt-sm layout-align="start center">
+                <div >Speaking  </div>
+                <div flex-offset="5" >  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.speaking">
+                        <md-option ng-repeat="n in [0,1,2,3,4,5,6,7,8,9,10]" ng-selected="n == 0">{{n}}</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+                <div flex-offset="10" fle>Understand spoken language  </div>
+                <div flex-offset="5">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.listen">
+                        <md-option ng-repeat="n in [0,1,2,3,4,5,6,7,8,9,10]" ng-selected="n == 0">{{n}}</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+                <div flex-offset="10">Reading  </div>
+                <div flex-offset="5">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.reading">
+                        <md-option ng-repeat="n in [0,1,2,3,4,5,6,7,8,9,10]" ng-selected="n == 0">{{n}}</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+
+            <div  layout="row"layout-align="start center">
+                <div >In your perception, do you face any problem in understanding, speaking, writing or reading in French?</div>
+                <div flex-offset="5">  <md-input-container class="md-block" flex-gt-sm>
+                    <md-select ng-model="french.problem">
+                        <md-option ng-selected="true">No</md-option>
+                        <md-option> Yes</md-option>
+                    </md-select>
+                </md-input-container >
+                </div>
+            </div>
+
+
+
+            <div ng-show="french.problem == 'Yes'">
+
+                                    <div flex-xs flex="50">
+                                        <md-checkbox aria-label="Select All"
+                                                     ng-checked="isChecked()"
+                                                     md-indeterminate="isIndeterminate()"
+                                                     ng-click="toggleAll()">
+                                            <span ng-if="isChecked()">Un-</span>Select All
+                                        </md-checkbox>
+                                    </div>
+                                    <div class="demo-select-all-checkboxes" flex="100" ng-repeat="item in items">
+                                        <md-checkbox ng-checked="exists(item, selected)" ng-click="toggle(item, selected)">
+                                            {{ item }}
+                                        </md-checkbox>
+                                    </div>
+
+            </div>
+
+            <md-button type="submit" class="md-primary md-raised"
+                       ng-disabled="frenchForm.$invalid" >
+                next
+            </md-button>
+
+        </form>
+</div>
+</md-content>

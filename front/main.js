@@ -23,7 +23,10 @@ require.config({
         "d3":"bower_components/d3/d3",
         "angularCharts":"bower_components/angular-charts/dist/angular-charts",
         "angular-jwt" :"bower_components/angular-jwt/dist/angular-jwt",
-        "angular-material-data-table":"bower_components/angular-material-data-table/dist/md-data-table"
+        "angular-material-data-table":"bower_components/angular-material-data-table/dist/md-data-table",
+        "angular-timer" :"bower_components/angular-timer/dist/angular-timer.min",
+        "moment": "bower_components/moment/min/moment.min",
+        "humanize-duration": "bower_components/humanize-duration/humanize-duration"
 
     },
     shim: {
@@ -92,6 +95,15 @@ require.config({
         },
         "angular-jwt":{
             deps:['angular']
+        },
+        "humanize-duration":{
+            deps:['angular']
+        },
+        "moment":{
+            deps:['angular']
+        },
+        "angular-timer":{
+            deps:['angular','humanize-duration','moment']
         }
 
 

@@ -42,6 +42,12 @@ define([],
                         controller: 'project:partThreeController',
                         controllerAs: 'partThree'
                     })
+                    .state("project.partThreeTest", {
+                        url: '/self-paced-reading-task/the-test',
+                        templateUrl: modulePath + '/views/partThree/test.html',
+                        controller: 'project:partThreeController',
+                        controllerAs: 'partThree'
+                    })
 
             }]);
         return routesModuleName;

@@ -18,9 +18,32 @@ define([], function () {
         };
         function testGrammar() {
 
+            var mots=["Le chien", "est" , "morte"];
+            $scope.countdown=10;
+            angular.forEach(mots, function(value) {
+                $scope.countdown=10;
+                $scope.$broadcast('timer-start');
+                $scope.enabledWord=value;
+                console.log(value);
+
+                $scope.countdown=10;
+            });
+
+            $scope.timerRunning = true;
+            $scope.startTimer = function (){
+                $scope.$broadcast('timer-start');
+                $scope.timerRunning = true;
+            };
+            $scope.stopTimer = function (){
+                $scope.$broadcast('timer-stop');
+                $scope.timerRunning = false;
+            };
+            $scope.$on('timer-stopped', function (event, data){
+                console.log('Timer Stopped - data = ', data);
+                $scope.countdown=10;
+            });
+
         }
-
-
         return vm;
 
     }

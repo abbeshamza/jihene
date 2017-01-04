@@ -12,3 +12,5 @@ api/bin/*
 api/composer.phar
 front/docs/*
 front/bower_components/*
+front/node_modules/*
+

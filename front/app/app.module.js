@@ -26,9 +26,10 @@ require([
         'highcharts-ng',
         'angular-material-data-table',
         'angular-jwt',
-        'angular-timer'
+        'timer'
+
     ], function (project,user, mainRoutes,restangular) {
-        var app = angular.module('app', [project,user, mainRoutes,'restangular','ngMaterial','mgo-angular-wizard','file-model','angularUtils.directives.dirPagination','ngMessages','ivh.treeview','LocalStorageModule','angular-loading-bar','angularCharts','highcharts-ng','md.data.table','angular-jwt','angular-timer']);
+        var app = angular.module('app', [project,user, mainRoutes,'restangular','ngMaterial','mgo-angular-wizard','file-model','angularUtils.directives.dirPagination','ngMessages','ivh.treeview','LocalStorageModule','angular-loading-bar','angularCharts','highcharts-ng','md.data.table','angular-jwt','timer']);
         app.config(config)
 
 

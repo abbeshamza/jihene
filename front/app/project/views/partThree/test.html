@@ -1,0 +1,11 @@
+
+<md-content  layout="column"layout-align="center center" ng-controller="partThree.testGrammar" >
+    <div>
+    <h3>Self-paced reading task</h3>
+    <timer countdown="countdown" interval="1000">
+        <md-progress-linear md-mode="determinate" type="warning" value="{{progressBar}}"></md-progress-linear>
+        {{enabledWord}}
+    </timer>
+
+    </div>
+</md-content>

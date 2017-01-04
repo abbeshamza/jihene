@@ -24,9 +24,9 @@ require.config({
         "angularCharts":"bower_components/angular-charts/dist/angular-charts",
         "angular-jwt" :"bower_components/angular-jwt/dist/angular-jwt",
         "angular-material-data-table":"bower_components/angular-material-data-table/dist/md-data-table",
-        "angular-timer" :"bower_components/angular-timer/dist/angular-timer.min",
-        "moment": "bower_components/moment/min/moment.min",
-        "humanize-duration": "bower_components/humanize-duration/humanize-duration"
+        "moment" : "bower_components/moment/moment",
+        "humanize-duration": "bower_components/humanize-duration/humanize-duration",
+        "timer" : "bower_components/angular-timer/dist/angular-timer"
 
     },
     shim: {
@@ -102,9 +102,10 @@ require.config({
         "moment":{
             deps:['angular']
         },
-        "angular-timer":{
-            deps:['angular','humanize-duration','moment']
-        }
+        "timer":{
+            deps:['angular','moment','humanize-duration']
+        },
+
 
 
     },
